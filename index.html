@@ -1,24 +1,285 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playbook — 1º Preparatoria — Misión M07 - Combinando Técnicas y Formalización de Prompts</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
+<header>
+<h1><span class="book-icon">📋</span> <strong>Playbook Misión M07: Combinando Técnicas y Formalización de Prompts</strong></h1>
+<div class="header-widgets">
+<div class="timer-container">
+<span id="timer">⏱️ 00:00</span>
+<button id="startStop">Start</button>
+<button id="reset">Reset</button>
+</div>
+<div class="theme-toggle">
+<i class="fas fa-sun"></i>
+<label class="switch">
+<input type="checkbox" id="theme-toggle-input">
+<span class="slider round"></span>
+</label>
+<i class="fas fa-moon"></i>
+</div>
+</div>
+</header>
+<div class="main-container">
+<aside class="activity-list">
+<h2>Actividades</h2>
+<ul>
+<li><a href="#activity-0">📝</a></li>
+<li><a href="#activity-1">1</a></li>
+<li><a href="#activity-2">2</a></li>
+<li><a href="#activity-3">3</a></li>
+<li><a href="#activity-4">4</a></li>
+<li><a href="#activity-5">5</a></li>
+</ul>
+<div class="sidebar-info">
+<p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+<p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+</div>
+</aside>
+<main class="content">
+<div class="progress-bar">
+<div class="progress"></div>
+</div>
+<button id="toggle-dialogues">Mostrar todos los diálogos</button>
+<section class="activity-card" id="activity-0">
+<h2 class="activity-title">📝 De un Vistazo: Misión M07 - Combinando Técnicas y Formalización de Prompts</h2>
+<p class="activity-purpose">Resumen de objetivos, secuencia y entregables de la sesión.</p>
+<div class="overview">
+<section class="overview-block">
+<h3>Objetivos e “I Can”</h3>
+<ul>
+<li>Puedo combinar las técnicas de Rol y Few-Shot para construir prompts robustos.</li>
+<li>Puedo formalizar un prompt para distintas IAs y generar contenido estructurado (ej. guion en Markdown).</li>
+</ul>
+</section>
+<section class="overview-block">
+<h3>Secuencia y tiempos</h3>
+<ol>
+<li>Saludo Interactivo con IA — 3 min</li>
+<li>“I Can” + Desafío — 5–7 min</li>
+<li>AI GYM — 10–12 min</li>
+<li>Brain Spark — 17–20 min</li>
+<li>GNIUS STORM — 5 min</li>
+</ol>
+</section>
+<section class="overview-block">
+<h3>Entregable del Micro-Proyecto</h3>
+<ul>
+<li>Un prompt combinado (Rol + Few-Shot) formalizado.</li>
+<li>Un guion/plano en Markdown generado por LLM, listo para usar en herramientas de presentación (Gamma o Tome).</li>
+</ul>
+</section>
+<section class="overview-block">
+<h3>Criterios de calidad</h3>
+<ul>
+<li>El prompt combina efectivamente Rol y Few-Shot.</li>
+<li>El prompt es robusto y genera resultados coherentes.</li>
+<li>El contenido generado (guion/plano en Markdown) es estructurado y utilizable en Gamma/Tome.</li>
+<li>Se identifica la adecuación del "idioma de prompt" para diferentes LLMs comerciales (Copy.ai, Jasper).</li>
+</ul>
+</section>
+<section class="overview-block">
+<h3>Materiales y preparación</h3>
+<ul>
+<li>Proyector e internet</li>
+<li>Acceso a LLM (Xolo), Copy.ai, Jasper, Gamma, Tome.</li>
+<li>Plantilla de ejemplo de prompt combinado y de guion Markdown.</li>
+</ul>
+</section>
+<section class="overview-block">
+<h3>Preparación previa</h3>
+<ul>
+<li>Verificar acceso a Copy.ai, Jasper, Gamma, Tome.</li>
+<li>Tener ejemplos de prompts Rol y Few-Shot.</li>
+<li>Preparar un ejemplo de guion en Markdown.</li>
+<li>Asegurar que Xolo está activo y con la misión configurada.</li>
+</ul>
+</section>
+</div>
+</section>
+<section class="activity-card" id="activity-1">
+<h2 class="activity-title">Saludo Interactivo con IA</h2>
+<p class="activity-purpose">Activar a Xolo con perfil e intereses; conectar con el foco de la misión.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
+<p class="step-instructions">Proyectar Diapositiva 2. Presenta el tema y el valor profesional según la Columna 1.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Equipo, hoy nos enfocaremos en la formalización de prompts avanzados, combinando técnicas como Rol y Few-Shot. Esta habilidad es crucial para interactuar eficientemente con diferentes modelos de IA y obtener resultados precisos, una competencia indispensable en el desarrollo de soluciones basadas en inteligencia artificial.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Activación con Xolo</h3>
+<p class="step-instructions">Cada estudiante abre su chat con Xolo y envía saludo con perfil de aprendizaje e intereses + referencia a la misión.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Activen a Xolo con su perfil de aprendizaje e intereses, mencionando que están en la Misión M07. Por ejemplo: 'Hola Xolo, soy [Nombre], perfil [Analista de Datos]; me interesa [optimización de procesos]. Estoy en la Misión M07.' Xolo confirmará su activación y recordará los criterios de la sesión.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="activity-card" id="activity-2">
+<h2 class="activity-title">“I Can Statement” + Desafío</h2>
+<p class="activity-purpose">Alinear expectativas y definir el reto práctico.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Presenta el reto</h3>
+<p class="step-instructions">Proyectar Diapositiva 3. Describe el reto y la meta observable, derivado de Columna 1 y 3.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">El reto de hoy es dominar la creación de prompts robustos. Esto significa que podrán guiar a una IA para generar contenido específico y estructurado, como un guion de presentación en Markdown, utilizando técnicas avanzadas de prompting. El éxito se medirá por la claridad y utilidad del contenido generado.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
+<p class="step-instructions">Proyectar Diapositiva 4. Cada estudiante redacta 1 “I Can” concreto alineado al entregable de Columna 2.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Ahora, formulen su propio 'I Can Statement' en una frase concisa. Por ejemplo: 'Puedo diseñar un prompt que combine Rol y Few-Shot para generar un guion de presentación en Markdown estructurado y listo para usar en Gamma o Tome.' Tienen un minuto para redactarlo.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="activity-card" id="activity-3">
+<h2 class="activity-title">AI GYM</h2>
+<p class="activity-purpose">Formalizar el marco/técnica de IA de la sesión.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Marco del día</h3>
+<p class="step-instructions">Proyectar Diapositiva 5. Introduce el framework según Columna 3 (p. ej., R.C.T.F.A., Rol Prompt, Few-Shot, CoT, citación/antisesgos, eficiencia de modelos, Markdown→presentación, depuración en Replit).</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Hoy nos centraremos en la combinación de las técnicas de Rol Prompt y Few-Shot para construir prompts más efectivos. Esta combinación es fundamental porque le da a la IA un contexto claro (el rol) y ejemplos concretos (Few-Shot) para emular. Eviten prompts ambiguos o sin ejemplos, y siempre consideren que cada LLM, como Copy.ai o Jasper, puede 'hablar' un dialecto ligeramente diferente de prompting. Usen la claridad y la especificidad como criterios para validar sus prompts.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Mini-demostración</h3>
+<p class="step-instructions">Proyectar Diapositiva 6. Construye ejemplo mínimo alineado a las tres columnas del input.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Observen cómo construyo un prompt combinado: primero, asigno un rol ('Eres un experto en marketing digital...'), luego, doy un ejemplo de Few-Shot ('Genera 3 ideas de titulares para un blog sobre IA en la educación. Ejemplo 1: "IA en el Aula: Transformando el Aprendizaje".'). ¿El rol es claro? ¿Los ejemplos son pertinentes y suficientes para guiar la respuesta deseada?</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 3 — Check rápido</h3>
+<p class="step-instructions">Proyectar Diapositiva 7. Verifica comprensión con 2 preguntas breves.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Pregunta rápida: ¿La técnica de Rol se enfoca en el formato o en la personalidad de la IA? ¿Y la técnica de Few-Shot, proporciona ejemplos o instrucciones generales?</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="activity-card" id="activity-4">
+<h2 class="activity-title">Brain Spark</h2>
+<p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Producción</h3>
+<p class="step-instructions">Proyectar Diapositiva 8. Indica el producto específico (Columna 2) y checklist de calidad (Columna 3). Tiempo de trabajo autónomo.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">N/A</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Iteración</h3>
+<p class="step-instructions">Proyectar Diapositiva 9. Pide una mejora concreta basada en criterios (p. ej., refinar prompt con restricciones, añadir contraejemplos, justificar modelo, agregar citación, etc.).</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Antes de finalizar, validen su prompt: ¿Si lo usan en Copy.ai o Jasper, el resultado es el esperado? Si generaron un guion en Markdown, ¿es el formato adecuado para pegar directamente en Gamma o Tome? Ajusten su prompt o el Markdown para optimizar la compatibilidad y la calidad.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 3 — Evidencia</h3>
+<p class="step-instructions">Proyectar Diapositiva 10. Solicita evidencia: enlace/captura/texto final/mini demo.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Suban su prompt formalizado y el guion/plano en Markdown generado al canal de entrega. Nombren su archivo: M07_Prompt_Guion_[SuNombre]. Asegúrense de que el formato Markdown sea exportable.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="activity-card" id="activity-5">
+<h2 class="activity-title">GNIUS STORM</h2>
+<p class="activity-purpose">Exhibir resultados y cerrar con síntesis accionable.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Showcase relámpago</h3>
+<p class="step-instructions">2–3 presentaciones de 30–45 s. Enfócate en evidencia y criterio.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Compartan en 30 segundos: ¿Cuál fue el rol más efectivo que asignaron a la IA y cómo el Few-Shot complementó su prompt para obtener el resultado deseado? Muestren la parte clave de su prompt y el fragmento del guion generado.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
+<p class="step-instructions">Proyectar Diapositiva 11. Entrega síntesis: 1 aprendizaje clave + 1 criterio que más impacto tuvo + siguiente paso fuera del aula.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Síntesis de la misión: Hemos aprendido que la formalización de prompts con técnicas como Rol y Few-Shot es esencial para la precisión y eficiencia en la interacción con IAs. El criterio clave que marcó la diferencia fue la adaptabilidad del prompt al 'idioma' específico de cada LLM. El siguiente paso aplicable es integrar esta metodología en cualquier proceso creativo o de investigación que requiera la asistencia de IA, optimizando la generación de contenido y la toma de decisiones estratégicas.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+</div>
+<script src="script.js"></script>
 </body>
-
 </html>
